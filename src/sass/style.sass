@@ -19,9 +19,63 @@ html
     font-weight: 400
     scroll-behavior: smooth
 
+//Общий контейнер
+
 .container
     max-width: 1200px
     margin: 0 auto
+
+//Общие стили заголовков сайта
+
+.title
+    font-size: 68px
+    color: $main-color
+
+//Общие стили текста сайта
+
+.text
+    font-size: 19px
+    color: $main-color
+    font-family: "WorkSans!"
+    font-weight: 400
+    line-height: 33px
+
+//Общие стили ссылок сайта
+
+.link
+    font-size: 19px
+    text-decoration: none
+    color: $main-color
+
+//Общие стили кнопок сайта
+
+.button
+    padding: 0
+    border-radius: 100px
+    font-size: 19px
+    width: 155px
+    height: 50px
+    border: 1px solid $main-color
+    background: #ffffff
+    cursor: pointer
+
+//Навигационное меню
+
+.nav-menu
+    height: 25px
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 60px
+        font-size: 19px
+        &:last-child
+            margin-right: 0px
+        a
+            text-decoration: none
+            color: #E5E2DE
+
+//Первая секция сайта
 
 .first-section
     min-height: 100vh
@@ -39,19 +93,28 @@ html
         color: #E5E2DE
     &__skip
         margin-bottom: 25px
-.nav-menu
-    height: 25px
-    &__list
-        display: flex
-        flex-direction: row
-    &__list-item
-        margin-right: 60px
-        font-size: 19px
-        &:last-child
-            margin-right: 0px
-        a
-            text-decoration: none
-            color: #E5E2DE
+
+//Кнопка прокрутки к началу страницы
+
+.scroll-to-top
+    display: none
+    position: fixed
+    width: 55px
+    height: 55px
+    bottom: 20px
+    right: 20px
+    padding-bottom: 10px
+    font-size: 40px
+    background-color: #fff
+    color: $main-color
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    transition: .3s all
+    z-index: 500
+
+//Вторая секция сайта
+
 .second-section
     display: flex
     justify-content: row
@@ -73,34 +136,9 @@ html
         border: none
         font-size: 19px
         background: #ffffff
-.title
-    font-size: 68px
-    color: $main-color
-.text
-    font-size: 19px
-    color: $main-color
-    font-family: "WorkSans!"
-    font-weight: 400
-    line-height: 33px
-.link
-    font-size: 19px
-    text-decoration: none
-    color: $main-color
-.footer-link
-    font-size: 16px
-    text-decoration: none
-    color: #E5E2DE
-    font-family: "WorkSans!"
-    font-weight: 400
-.button
-    padding: 0
-    border-radius: 100px
-    font-size: 19px
-    width: 155px
-    height: 50px
-    border: 1px solid $main-color
-    background: #ffffff
-    cursor: pointer
+
+//Вторая секция - контейнер с изображениями
+
 .img-box
     position: relative
     &__first-img
@@ -115,6 +153,9 @@ html
         position: absolute
         top: 414px
         left: 433px
+
+//Третья секция сайта
+
 .third-section
     position: relative
     min-height: 1030px
@@ -127,6 +168,9 @@ html
         word-spacing: 28px
     &__title
         margin-bottom: 33px
+
+//Третья секция - правое изображение
+
 .right-pict
     position: absolute
     display: flex
@@ -140,6 +184,9 @@ html
     &__title
         font-size: 45px
         color: #ffffff
+
+//Подпись правого изображения
+
 .right-pict-desc
     position: absolute
     width: 341px
@@ -150,6 +197,9 @@ html
         color: $main-color
         font-family: "WorkSans!"
         font-weight: 400
+
+//Третья секция - левое изображение
+
 .left-pict
     position: absolute
     display: flex
@@ -171,6 +221,9 @@ html
         color: $main-color
         font-family: "WorkSans!"
         font-weight: 400
+
+//Подпись левого изображения
+
 .left-pict-desc
     position: absolute
     top: 829px
@@ -180,10 +233,14 @@ html
         color: $main-color
         font-family: "WorkSans!"
         font-weight: 400
+
+//Третья секция - стрелки
+
 .first-vector
     position: absolute
     top: 829px
     left: 634px
+
 .second-vector
     position: absolute
     display: inline-flex
@@ -192,6 +249,9 @@ html
     &__numbers
         margin-right: 11px
         margin-left: 11px
+
+//Четвертая секция сайта
+
 .fourth-section
     min-height: 840px
     display: flex
@@ -205,6 +265,9 @@ html
         margin-bottom: 51px
     &__text
         margin-bottom: 35px
+
+//Четвертая секция - форма поиска
+
 .fourth-section-search
     padding-left: 25px
     margin-bottom: 37px
@@ -216,6 +279,9 @@ html
     &::placeholder
         font-size: 19px
         color: $main-color
+
+//Пятая секция сайта
+
 .fith-section
     position: relative
     display: flex
@@ -255,6 +321,9 @@ html
         position: absolute
         top: 59px
         right: 0px
+
+//Шестая секция сайта
+
 .sixth-section
     min-height: 615px
     display: flex
@@ -270,6 +339,9 @@ html
     &__marker
         position: absolute
         top: 0px
+
+//Седьмая секция сайта
+
 .seventh-section
     min-height: 840px
     background: #F7F7F7
@@ -284,6 +356,9 @@ html
         margin-bottom: 64px
     &__text
         margin-bottom: 64px
+
+//Восьмая секция сайта
+
 .eight-section
     min-height: 289px
     background: #E5E2DE
@@ -304,7 +379,12 @@ html
         height: 50px
         cursor: pointer
         padding: 0
-.eight-section-email
+    &__email-btn
+        display: flex
+
+//Восьмая секция - форма отправки email
+
+.email-form
     border: 1px solid #8B8B8B
     background: #E5E2DE
     border-radius: 20px
@@ -312,10 +392,28 @@ html
     height: 60px
     padding: 0 0 0 30px
     margin-right: 30px
-    margin-bottom: 20px
+    margin-bottom: 10px
     &::placeholder
         font-size: 19px
         color: $main-color
+    &:focus
+        outline: none
+        border-bottom: 3px solid #66D763
+    &:focus:invalid
+        border-bottom: 3px solid #D76363
+    &__label
+        display: block
+        font-size: 19px
+        color: $main-color
+        margin-bottom: 10px
+        transition: .5s all
+    &:placeholder-shown + &__label
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-1rem)
+
+//Восьмая секция - чекбокс
+
 .checkbox__label
     display: flex
     align-items: center
@@ -334,6 +432,9 @@ html
     margin-right: 40px
 .checkbox__real img
     display: none
+
+//Футер сайта
+
 .footer
     position: relative
     min-height: 400px
@@ -365,6 +466,18 @@ html
         margin-right: 55px
     &__list-item-4
         margin-right: 30px
+
+//Ссылки футера
+
+.footer-link
+    font-size: 16px
+    text-decoration: none
+    color: #E5E2DE
+    font-family: "WorkSans!"
+    font-weight: 400
+
+//Футер - нижний список с иконками
+
 .bottom-list
     display: flex
     flex-direction: row

@@ -39,6 +39,7 @@
                 </ul>
             </nav>
         </div>
+        <button class="scroll-to-top">&#8593</button>
     </section>
     <section id="products" class="second-section container">
         <div id="main" class="second-section__content-container">
@@ -86,7 +87,7 @@
             <p class="fourth-section__text text">We work together with dealers in 19 countries, all over the world. Find out which one is closest to you.</p>
             <search class="fourth-section__search">
                 <form method="get" action="/search">
-                  <input type="search" name="search-text" placeholder="Your location" class="fourth-section-search"><br>
+                  <input type="search" name="search-text" placeholder="Your location" class="fourth-section-search" required><br>
                   <button class="fourth-section__btn button">Search</button>
                 </form>
             </search>
@@ -115,11 +116,18 @@
     </section>
     <section class="eight-section container">
         <p class="eight-section__text">Request our <br> 2022 catalogue</p>
-        <form action="">
-            <input type="email" name="email-address" placeholder="email address" class="eight-section-email">
-            <button class="eight-section__btn">Send</button><br>
+        <form action="#!" class="eight-section__form">
+            <div class="eight-section__email-btn">
+                <div class="eight-section__input">
+                    <input type="email" placeholder="user@gmail.com" class="email-form" id="email" required>
+                    <label for="email" class="email-form__label">email adress</label>
+                </div>
+                
+                <button class="eight-section__btn">Send</button>
+            </div>
+            
             <label class="checkbox__label" for="checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__fake">
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox__fake" required>
                 <span class="checkbox__real">
                     <img src="icons/icons8-галочка.svg" alt="mark">
                 </span>
@@ -172,5 +180,7 @@
             <a href="#!"><img class="bottom-list__img" src="icons/Pinterest-icon.svg" alt="pntr-icon"></a>
         </ul>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
